@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bala — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <link rel="stylesheet" href="static/css/styles.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Balasubramaniyam</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero py-6 text-center text-white" style="background: linear-gradient(90deg,#6a11cb,#2575fc);">
+      <div class="container" data-aos="fade-up">
+        <h1 class="display-5 fw-bold">Hi — I'm Balasubramaniyam</h1>
+        <p class="lead">•Front-End developer • Designer • Problem solver</p>
+        <a class="btn btn-light btn-lg mt-3" href="#projects">View my work</a>
+      </div>
+    </header>
+
+    <main class="container my-6">
+      <section id="about" class="py-5" data-aos="fade-right">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/250" alt="C:\Users\BALASUBRAMANIYAM\OneDrive\Pictures\Saved Pictures\my photo.jpg" class="rounded-circle img-fluid shadow-sm">
+          </div>
+          <div class="col-md-8">
+            <h2>About me</h2>
+            <p>Aspiring Front End Developer with a passion for creating user-interactive frontends and efficient backend systems. Interested in game development and motivated to explore innovative technologies. Strong willingness to learn new skills, adapt to challenges, and contribute creative solutions that enhance user experience and performance</p>
+            <div class="d-flex gap-2 mt-3">
+              <span class="badge bg-primary">Python</span>
+              <span class="badge bg-secondary">HTML</span>
+              <span class="badge bg-success">JavaScript</span>
+              <span class="badge bg-info">CSS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="contact" class="py-5" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, send a message.</p>
+
+        <form id="contactForm" class="row g-3" onsubmit="return false;">
+          <div class="col-md-6">
+            <label class="form-label">Name</label>
+            <input id="name" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input id="email" type="email" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Message</label>
+            <textarea id="message" class="form-control" rows="5" required></textarea>
+          </div>
+          <div class="col-12">
+            <button id="sendBtn" class="btn btn-primary">Send message</button>
+            <div id="formStatus" class="mt-3"></div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="py-4 bg-light text-center">
+      <div class="container">
+        <small>© Balasubramaniyam — Built with Bootstrap</small>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
